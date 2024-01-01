@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Events/Event.h"
+
 namespace VoxelEngine
 {
 	class __declspec(dllexport) Application

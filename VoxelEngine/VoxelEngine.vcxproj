@@ -11,6 +11,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\VoxelEngine\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\VoxelEngine\Events\Event.h" />
+    <ClInclude Include="src\VoxelEngine\Events\KeyEvent.h" />
+    <ClInclude Include="src\VoxelEngine\Events\MouseEvent.h" />
+    <ClInclude Include="src\hzpch.h" />
     <ClInclude Include="src\VoxelEngine\Log.h" />
     <ClInclude Include="src\VoxelEngine.h" />
     <ClInclude Include="src\VoxelEngine\Application.h" />
@@ -67,8 +72,10 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)VoxelEngine\vendor\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)VoxelEngine\vendor\spdlog\include; $(SolutionDir)VoxelEngine\src;</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>hzpch.h</PrecompiledHeaderFile>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -80,8 +87,10 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)VoxelEngine\vendor\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)VoxelEngine\vendor\spdlog\include; $(SolutionDir)VoxelEngine\src;</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>hzpch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VoxelEngine", "VoxelEngine\VoxelEngine.vcxproj", "{10D34EB1-6D55-4297-95DB-C7418DCAECAD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Minecraft", "Minecraft\Minecraft.vcxproj", "{87DA8B76-A096-42C4-8364-B227EF364714}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Minecraft", "Minecraft\Minecraft.vcxproj", "{E17D6AAC-D597-4376-8DEF-2DAE607AD904}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VoxelEngine", "VoxelEngine\VoxelEngine.vcxproj", "{3B9BCE62-CF72-4CD7-B85D-0E03A17B78F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{10D34EB1-6D55-4297-95DB-C7418DCAECAD}.Debug|x64.ActiveCfg = Debug|x64
-		{10D34EB1-6D55-4297-95DB-C7418DCAECAD}.Debug|x64.Build.0 = Debug|x64
-		{10D34EB1-6D55-4297-95DB-C7418DCAECAD}.Release|x64.ActiveCfg = Release|x64
-		{10D34EB1-6D55-4297-95DB-C7418DCAECAD}.Release|x64.Build.0 = Release|x64
-		{E17D6AAC-D597-4376-8DEF-2DAE607AD904}.Debug|x64.ActiveCfg = Debug|x64
-		{E17D6AAC-D597-4376-8DEF-2DAE607AD904}.Debug|x64.Build.0 = Debug|x64
-		{E17D6AAC-D597-4376-8DEF-2DAE607AD904}.Release|x64.ActiveCfg = Release|x64
-		{E17D6AAC-D597-4376-8DEF-2DAE607AD904}.Release|x64.Build.0 = Release|x64
+		{87DA8B76-A096-42C4-8364-B227EF364714}.Debug|x64.ActiveCfg = Debug|x64
+		{87DA8B76-A096-42C4-8364-B227EF364714}.Debug|x64.Build.0 = Debug|x64
+		{87DA8B76-A096-42C4-8364-B227EF364714}.Release|x64.ActiveCfg = Release|x64
+		{87DA8B76-A096-42C4-8364-B227EF364714}.Release|x64.Build.0 = Release|x64
+		{3B9BCE62-CF72-4CD7-B85D-0E03A17B78F7}.Debug|x64.ActiveCfg = Debug|x64
+		{3B9BCE62-CF72-4CD7-B85D-0E03A17B78F7}.Debug|x64.Build.0 = Debug|x64
+		{3B9BCE62-CF72-4CD7-B85D-0E03A17B78F7}.Release|x64.ActiveCfg = Release|x64
+		{3B9BCE62-CF72-4CD7-B85D-0E03A17B78F7}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,8 +1,6 @@
 #pragma once
 
-#include "Core.h"
-
-namespace VoxelEngine 
+namespace VoxelEngine
 {
 	class __declspec(dllexport) Application
 	{

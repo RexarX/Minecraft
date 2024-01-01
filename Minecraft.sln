@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VoxelEngine", "Minecraft\Minecraft.vcxproj", "{10D34EB1-6D55-4297-95DB-C7418DCAECAD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VoxelEngine", "VoxelEngine\VoxelEngine.vcxproj", "{10D34EB1-6D55-4297-95DB-C7418DCAECAD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Minecraft", "Minecampf\Minecampf.vcxproj", "{E17D6AAC-D597-4376-8DEF-2DAE607AD904}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Minecraft", "Minecraft\Minecraft.vcxproj", "{E17D6AAC-D597-4376-8DEF-2DAE607AD904}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

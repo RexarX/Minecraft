@@ -15,7 +15,7 @@
     <ClInclude Include="src\VoxelEngine\Events\Event.h" />
     <ClInclude Include="src\VoxelEngine\Events\KeyEvent.h" />
     <ClInclude Include="src\VoxelEngine\Events\MouseEvent.h" />
-    <ClInclude Include="src\hzpch.h" />
+    <ClInclude Include="src\vepch.h" />
     <ClInclude Include="src\VoxelEngine\Log.h" />
     <ClInclude Include="src\VoxelEngine.h" />
     <ClInclude Include="src\VoxelEngine\Application.h" />

@@ -1,54 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Исходные файлы">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="VoxelEngine">
+      <UniqueIdentifier>{C9F2F76B-35A8-7061-BE9C-6A382A516765}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы заголовков">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Файлы ресурсов">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="VoxelEngine\Events">
+      <UniqueIdentifier>{8D8279F6-7966-3A4C-E2C6-349FCEC924CE}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\VoxelEngine.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="src\VoxelEngine\Log.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
+    <ClInclude Include="src\VoxelEngine.h" />
     <ClInclude Include="src\VoxelEngine\Application.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>VoxelEngine</Filter>
     </ClInclude>
     <ClInclude Include="src\VoxelEngine\EntryPoint.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>VoxelEngine</Filter>
     </ClInclude>
     <ClInclude Include="src\VoxelEngine\Events\ApplicationEvent.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>VoxelEngine\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\VoxelEngine\Events\Event.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>VoxelEngine\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\VoxelEngine\Events\KeyEvent.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>VoxelEngine\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\VoxelEngine\Events\MouseEvent.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>VoxelEngine\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\hzpch.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="src\VoxelEngine\Log.h">
+      <Filter>VoxelEngine</Filter>
     </ClInclude>
+    <ClInclude Include="src\vepch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\VoxelEngine\Log.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="src\VoxelEngine\Application.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>VoxelEngine</Filter>
     </ClCompile>
+    <ClCompile Include="src\VoxelEngine\Log.cpp">
+      <Filter>VoxelEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vepch.cpp" />
   </ItemGroup>
 </Project>

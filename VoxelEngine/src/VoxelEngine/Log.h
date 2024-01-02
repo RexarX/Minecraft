@@ -3,8 +3,6 @@
 #include "spdlog/spdlog.h"
 #include "spdlog/fmt/ostr.h"
 
-#include <memory>
-
 namespace VoxelEngine
 {
 	class __declspec(dllexport) Log

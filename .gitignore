@@ -36,3 +36,9 @@
 bin/
 bin-int/
 *.user
+
+#VS
+.sln
+.vcxproj
+.vs
+

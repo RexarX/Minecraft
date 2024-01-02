@@ -2,9 +2,9 @@
 
 #include "Application.h"
 
-#include "Events/ApplicationEvent.h"
+#include "VoxelEngine/Events/ApplicationEvent.h"
 
-#include "Log.h"
+#include "VoxelEngine/Log.h"
 
 namespace VoxelEngine {
 	Application::Application()

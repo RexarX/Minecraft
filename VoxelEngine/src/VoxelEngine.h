@@ -1,6 +1,6 @@
 #pragma once
 
-#include "VoxelEngine/Application.h"
+#include "VoxelEngine/Application.cpp"
 
 #include "VoxelEngine/Log.cpp"
 

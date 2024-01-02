@@ -1,1 +1,1 @@
-Nothing here yet
+Launch GenerateProjects.bat to generate a project with premake

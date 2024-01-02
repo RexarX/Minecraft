@@ -10,11 +10,14 @@ workspace "Minecraft"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
--- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "VoxelEngine/vendor/GLFW/include"
+IncludeDir["GLAD"] = "VoxelEngine/vendor/GLAD/include"
+IncludeDir["ImGui"] = "VoxelEngine/vendor/imgui"
 
 include "VoxelEngine/vendor/GLFW"
+include "VoxelEngine/vendor/GLAD"
+include "VoxelEngine/vendor/ImGui"
 
 project "VoxelEngine"
 	location "VoxelEngine"
@@ -37,12 +40,16 @@ project "VoxelEngine"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.GLAD}",
+		"%{IncludeDir.ImGui}"
 	}
 
 	links 
 	{ 
 		"GLFW",
+		"GLAD",
+		"ImGui",
 		"opengl32.lib"
 	}
 
@@ -54,7 +61,8 @@ project "VoxelEngine"
 		defines
 		{
 			"VE_PLATFORM_WINDOWS",
-			"VE_BUILD_DLL"
+			"VE_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands

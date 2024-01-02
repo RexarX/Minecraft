@@ -9,6 +9,11 @@ workspace "Minecraft"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "VoxelEngine/vendor/GLFW/include"
+
+include "VoxelEngine/vendor/GLFW"
+
 project "VoxelEngine"
 	location "VoxelEngine"
 	kind "SharedLib"
@@ -29,7 +34,14 @@ project "VoxelEngine"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links 
+	{ 
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

@@ -12,4 +12,6 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "VoxelEngine/Log.h"
+
 #include <Windows.h>

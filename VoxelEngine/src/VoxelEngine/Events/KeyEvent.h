@@ -47,7 +47,9 @@ namespace VoxelEngine
 	{
 	public:
 		KeyReleasedEvent(int keycode)
-			: KeyEvent(keycode) {}
+			: KeyEvent(keycode) 
+		{
+		}
 
 		std::string ToString() const override
 		{

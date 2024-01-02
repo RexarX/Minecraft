@@ -4,7 +4,7 @@
 
 namespace VoxelEngine {
 
-	class __declspec(dllexport) MouseMovedEvent : public Event
+	class VOXELENGINE_API MouseMovedEvent : public Event
 	{
 	public:
 		MouseMovedEvent(float x, float y)
@@ -29,7 +29,7 @@ namespace VoxelEngine {
 		float m_MouseX, m_MouseY;
 	};
 
-	class __declspec(dllexport) MouseScrolledEvent : public Event
+	class VOXELENGINE_API MouseScrolledEvent : public Event
 	{
 	public:
 		MouseScrolledEvent(float xOffset, float yOffset)
@@ -54,7 +54,7 @@ namespace VoxelEngine {
 		float m_XOffset, m_YOffset;
 	};
 
-	class __declspec(dllexport) MouseButtonEvent : public Event
+	class VOXELENGINE_API MouseButtonEvent : public Event
 	{
 	public:
 		inline int GetMouseButton() const { return m_Button; }
@@ -70,7 +70,7 @@ namespace VoxelEngine {
 		int m_Button;
 	};
 
-	class __declspec(dllexport) MouseButtonPressedEvent : public MouseButtonEvent
+	class VOXELENGINE_API MouseButtonPressedEvent : public MouseButtonEvent
 	{
 	public:
 		MouseButtonPressedEvent(int button)
@@ -88,7 +88,7 @@ namespace VoxelEngine {
 		EVENT_CLASS_TYPE(MouseButtonPressed)
 	};
 
-	class __declspec(dllexport) MouseButtonReleasedEvent : public MouseButtonEvent
+	class VOXELENGINE_API MouseButtonReleasedEvent : public MouseButtonEvent
 	{
 	public:
 		MouseButtonReleasedEvent(int button)

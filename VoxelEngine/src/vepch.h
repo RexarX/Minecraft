@@ -14,4 +14,6 @@
 
 #include "VoxelEngine/Log.h"
 
+#ifdef VE_PLATFORM_WINDOWS
 #include <Windows.h>
+#endif

@@ -4,7 +4,7 @@
 
 namespace VoxelEngine 
 {
-	class __declspec(dllexport) WindowResizeEvent : public Event
+	class VOXELENGINE_API WindowResizeEvent : public Event
 	{
 	public:
 		WindowResizeEvent(unsigned int width, unsigned int height)
@@ -29,7 +29,7 @@ namespace VoxelEngine
 		unsigned int m_Width, m_Height;
 	};
 
-	class __declspec(dllexport) WindowCloseEvent : public Event
+	class VOXELENGINE_API WindowCloseEvent : public Event
 	{
 	public:
 		WindowCloseEvent() = default;
@@ -38,7 +38,7 @@ namespace VoxelEngine
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 
-	class __declspec(dllexport) AppTickEvent : public Event
+	class VOXELENGINE_API AppTickEvent : public Event
 	{
 	public:
 		AppTickEvent() = default;
@@ -47,7 +47,7 @@ namespace VoxelEngine
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 
-	class __declspec(dllexport) AppUpdateEvent : public Event
+	class VOXELENGINE_API AppUpdateEvent : public Event
 	{
 	public:
 		AppUpdateEvent() = default;
@@ -56,7 +56,7 @@ namespace VoxelEngine
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 
-	class __declspec(dllexport) AppRenderEvent : public Event
+	class VOXELENGINE_API AppRenderEvent : public Event
 	{
 	public:
 		AppRenderEvent() = default;

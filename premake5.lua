@@ -4,11 +4,13 @@ workspace "Minecraft"
 	configurations
 	{
 		"Debug",
-		"Release"
+		"Release",
+		"Dist"
 	}
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "VoxelEngine/vendor/GLFW/include"
 
@@ -49,10 +51,28 @@ project "VoxelEngine"
 		staticruntime "On"
 		systemversion "latest"
 
+		defines
+		{
+			"VE_PLATFORM_WINDOWS",
+			"VE_BUILD_DLL"
+		}
+
 		postbuildcommands
 		{
 			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Minecraft")
 		}
+
+	filter "configurations:Debug"
+		defines "VE_DEBUG"
+		symbols "On"
+
+	filter "configurations:Release"
+		defines "VE_RELEASE"
+		optimize "On"
+
+	filter "configurations:Dist"
+		defines "VE_DIST"
+		optimize "On"
 
 project "Minecraft"
 	location "Minecraft"
@@ -76,10 +96,27 @@ project "Minecraft"
 
 	links
 	{
-		"Minecraft"
+		"VoxelEngine"
 	}
 
 	filter "system:windows"
 		cppdialect "C++20"
 		staticruntime "On"
 		systemversion "latest"
+
+		defines
+		{
+			"VE_PLATFORM_WINDOWS"
+		}
+
+	filter "configurations:Debug"
+		defines "VE_DEBUG"
+		symbols "On"
+
+	filter "configurations:Release"
+		defines "VE_RELEASE"
+		optimize "On"
+
+	filter "configurations:Dist"
+		defines "VE_DIST"
+		optimize "On"

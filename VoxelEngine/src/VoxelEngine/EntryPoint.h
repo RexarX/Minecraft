@@ -1,5 +1,7 @@
 #pragma once
 
+#ifdef VE_PLATFORM_WINDOWS
+
 extern VoxelEngine::Application* VoxelEngine::CreateApplication();
 
 int main(int argc, char** argv)
@@ -12,3 +14,5 @@ int main(int argc, char** argv)
 
 	return 0;
 }
+
+#endif

@@ -1,8 +1,8 @@
 #pragma once
 
-#pragma once
-
 #include "vepch.h"
+
+#include "VoxelEngine/Core.h"
 
 #include "VoxelEngine/Events/Event.h"
 
@@ -22,12 +22,12 @@ namespace VoxelEngine
 		}
 	};
 
-	class __declspec(dllexport) Window
+	class VOXELENGINE_API Window
 	{
 	public:
 		using EventCallbackFn = std::function<void(Event&)>;
 
-		virtual ~Window() {}
+		virtual ~Window() = default;
 
 		virtual void OnUpdate() = 0;
 

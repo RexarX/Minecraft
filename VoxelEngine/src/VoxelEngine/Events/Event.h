@@ -28,7 +28,7 @@ namespace VoxelEngine {
 
 #define EVENT_CLASS_CATEGORY(category) virtual int GetCategoryFlags() const override { return category; }
 
-	class __declspec(dllexport) Event
+	class VOXELENGINE_API Event
 	{
 		friend class EventDispatcher;
 

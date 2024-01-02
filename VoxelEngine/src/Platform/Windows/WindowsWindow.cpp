@@ -1,4 +1,5 @@
 #include "vepch.h"
+
 #include "WindowsWindow.h"
 
 #include "VoxelEngine/Events/ApplicationEvent.h"
@@ -37,8 +38,7 @@ namespace VoxelEngine
 
 		VE_CORE_INFO("Creating window {0} ({1}, {2})", props.Title, props.Width, props.Height);
 
-		if (!s_GLFWInitialized)
-		{
+		if (!s_GLFWInitialized) {
 			int success = glfwInit();
 			VE_CORE_ASSERT(success, "Could not intialize GLFW!");
 			glfwSetErrorCallback(GLFWErrorCallback);

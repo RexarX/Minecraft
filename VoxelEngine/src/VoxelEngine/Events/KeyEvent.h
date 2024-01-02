@@ -4,7 +4,7 @@
 
 namespace VoxelEngine 
 {
-	class __declspec(dllexport) KeyEvent : public Event
+	class VOXELENGINE_API KeyEvent : public Event
 	{
 	public:
 		inline int GetKeyCode() const { return m_KeyCode; }
@@ -20,7 +20,7 @@ namespace VoxelEngine
 		int m_KeyCode;
 	};
 
-	class __declspec(dllexport) KeyPressedEvent : public KeyEvent
+	class VOXELENGINE_API KeyPressedEvent : public KeyEvent
 	{
 	public:
 		KeyPressedEvent(int keycode, int repeatCount)
@@ -43,7 +43,7 @@ namespace VoxelEngine
 		int m_RepeatCount;
 	};
 
-	class __declspec(dllexport) KeyReleasedEvent : public KeyEvent
+	class VOXELENGINE_API KeyReleasedEvent : public KeyEvent
 	{
 	public:
 		KeyReleasedEvent(int keycode)

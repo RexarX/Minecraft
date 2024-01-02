@@ -1,4 +1,7 @@
-#include "VoxelEngine.h"
+#include <VoxelEngine.h>
+
+//std::shared_ptr<spdlog::logger> VoxelEngine::Log::s_CoreLogger;
+//std::shared_ptr<spdlog::logger> VoxelEngine::Log::s_ClientLogger;
 
 class Minecraft : public VoxelEngine::Application
 {

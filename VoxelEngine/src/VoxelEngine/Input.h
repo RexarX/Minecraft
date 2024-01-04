@@ -2,7 +2,8 @@
 
 #include "VoxelEngine/Core.h"
 
-namespace VoxelEngine {
+namespace VoxelEngine 
+{
 	class VOXELENGINE_API Input
 	{
 	public:

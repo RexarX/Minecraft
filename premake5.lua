@@ -1,5 +1,6 @@
 workspace "Minecraft"
 	architecture "x64"
+	startproject "Minecraft"
 
 	configurations
 	{

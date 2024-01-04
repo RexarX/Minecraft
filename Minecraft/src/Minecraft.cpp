@@ -1,4 +1,5 @@
 #include <VoxelEngine.h>
+#include <VoxelEngine/Events/KeyEvent.h>
 
 class GameLayer : public VoxelEngine::Layer
 {
@@ -10,12 +11,20 @@ public:
 
 	void OnUpdate() override
 	{
-		VE_INFO("Game::Update");
+		if (VoxelEngine::Input::IsKeyPressed(VoxelEngine::Key::Tab)) {
+			VE_TRACE("Tab key is pressed (poll)!");
+		}
 	}
 
 	void OnEvent(VoxelEngine::Event& event) override
 	{
-		VE_TRACE("{0}", event);
+		if (event.GetEventType() == VoxelEngine::EventType::KeyPressed) {
+			VoxelEngine::KeyPressedEvent& e = (VoxelEngine::KeyPressedEvent&)event;
+			if (e.GetKeyCode() == VoxelEngine::Key::Tab) {
+				VE_TRACE("Tab key is pressed (event)!");
+			}
+			VE_TRACE(e.GetKeyCode());
+		}
 	}
 };
 

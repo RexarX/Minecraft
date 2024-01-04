@@ -1,9 +1,5 @@
 #pragma once
 
-#include "vepch.h"
-
-#include "Layer.h"
-
 namespace VoxelEngine
 {
 	using KeyCode = uint16_t;

@@ -152,6 +152,9 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\VoxelEngine\LayerStack.h" />
+    <ClInclude Include="src\VoxelEngine\Layer.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\VoxelEngine.h" />
     <ClInclude Include="src\VoxelEngine\Application.h" />
@@ -161,11 +164,17 @@
     <ClInclude Include="src\VoxelEngine\Events\Event.h" />
     <ClInclude Include="src\VoxelEngine\Events\KeyEvent.h" />
     <ClInclude Include="src\VoxelEngine\Events\MouseEvent.h" />
+    <ClInclude Include="src\VoxelEngine\Input.h" />
+    <ClInclude Include="src\VoxelEngine\KeyCodes.h" />
     <ClInclude Include="src\VoxelEngine\Log.h" />
+    <ClInclude Include="src\VoxelEngine\MouseButtonCodes.h" />
     <ClInclude Include="src\VoxelEngine\Window.h" />
     <ClInclude Include="src\vepch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\VoxelEngine\LayerStack.cpp" />
+    <ClCompile Include="src\VoxelEngine\Layer.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\VoxelEngine\Application.cpp" />
     <ClCompile Include="src\VoxelEngine\Log.cpp" />

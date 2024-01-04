@@ -47,6 +47,12 @@
       <Filter>VoxelEngine</Filter>
     </ClInclude>
     <ClInclude Include="src\vepch.h" />
+    <ClInclude Include="src\VoxelEngine\Input.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
+    <ClInclude Include="src\VoxelEngine\KeyCodes.h" />
+    <ClInclude Include="src\VoxelEngine\MouseButtonCodes.h" />
+    <ClInclude Include="src\VoxelEngine\Layer.h" />
+    <ClInclude Include="src\VoxelEngine\LayerStack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
@@ -59,5 +65,8 @@
       <Filter>VoxelEngine</Filter>
     </ClCompile>
     <ClCompile Include="src\vepch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
+    <ClCompile Include="src\VoxelEngine\Layer.cpp" />
+    <ClCompile Include="src\VoxelEngine\LayerStack.cpp" />
   </ItemGroup>
 </Project>

@@ -170,9 +170,9 @@ namespace VoxelEngine
 			m_VertexArray->Bind();
 			glDrawElements(GL_TRIANGLES, m_VertexArray->GetIndexBuffer()->GetCount(), GL_UNSIGNED_INT, nullptr);
 
-			for (Layer* layer : m_LayerStack)
-				layer->OnUpdate();
-
+			for (Layer* layer : m_LayerStack) { 
+				layer->OnUpdate(); 
+			}
 			m_Window->OnUpdate();
 		}
 	}

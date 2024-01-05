@@ -11,7 +11,7 @@ public:
 
 	void OnUpdate() override
 	{
-		if (VoxelEngine::Input::IsKeyPressed(VoxelEngine::Key::Tab)) {
+		if (VoxelEngine::Input::IsKeyPressed(VoxelEngine::Key::Q)) {
 			VE_TRACE("Tab key is pressed (poll)!");
 		}
 	}
@@ -20,10 +20,7 @@ public:
 	{
 		if (event.GetEventType() == VoxelEngine::EventType::KeyPressed) {
 			VoxelEngine::KeyPressedEvent& e = (VoxelEngine::KeyPressedEvent&)event;
-			if (e.GetKeyCode() == VoxelEngine::Key::Tab) {
-				VE_TRACE("Tab key is pressed (event)!");
-			}
-			VE_TRACE(e.GetKeyCode());
+			if (e.GetKeyCode() == VoxelEngine::Key::Tab) { VE_TRACE("{0} key is pressed (event)!", e.GetKeyCode()); }
 		}
 	}
 };

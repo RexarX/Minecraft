@@ -7,13 +7,13 @@ namespace VoxelEngine
 	class VOXELENGINE_API WindowResizeEvent : public Event
 	{
 	public:
-		WindowResizeEvent(unsigned int width, unsigned int height)
+		WindowResizeEvent(uint16_t width, uint16_t height)
 			: m_Width(width), m_Height(height)
 		{
 		}
 
-		inline unsigned int GetWidth() const { return m_Width; }
-		inline unsigned int GetHeight() const { return m_Height; }
+		inline uint16_t GetWidth() const { return m_Width; }
+		inline uint16_t GetHeight() const { return m_Height; }
 
 		std::string ToString() const override
 		{
@@ -26,7 +26,7 @@ namespace VoxelEngine
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 
 	private:
-		unsigned int m_Width, m_Height;
+		uint16_t m_Width, m_Height;
 	};
 
 	class VOXELENGINE_API WindowCloseEvent : public Event

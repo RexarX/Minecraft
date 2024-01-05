@@ -1,10 +1,10 @@
 #pragma once
 
+#include "vepch.h"
+
 #include "VoxelEngine/Core.h"
 
 #include "Layer.h"
-
-#include "vepch.h"
 
 namespace VoxelEngine 
 {
@@ -26,5 +26,4 @@ namespace VoxelEngine
 		std::vector<Layer*> m_Layers;
 		std::vector<Layer*>::iterator m_LayerInsert;
 	};
-
 }

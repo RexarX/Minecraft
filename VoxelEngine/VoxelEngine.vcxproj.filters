@@ -1338,6 +1338,14 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp">
       <Filter>vendor\glm\glm</Filter>
     </ClInclude>
+    <ClInclude Include="src\VoxelEngine\Render\Shader.h" />
+    <ClInclude Include="src\VoxelEngine\Render\GraphicsContext.h" />
+    <ClInclude Include="src\VoxelEngine\Render\Renderer.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
+    <ClInclude Include="src\VoxelEngine\Render\Buffer.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h" />
+    <ClInclude Include="src\VoxelEngine\Render\VertexArray.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
@@ -1361,5 +1369,12 @@
     <ClCompile Include="src\vepch.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\VoxelEngine\Render\Shader.cpp" />
+    <ClCompile Include="src\VoxelEngine\Render\Renderer.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
+    <ClCompile Include="src\VoxelEngine\Render\Buffer.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp" />
+    <ClCompile Include="src\VoxelEngine\Render\VertexArray.cpp" />
   </ItemGroup>
 </Project>
